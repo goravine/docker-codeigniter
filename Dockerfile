@@ -40,7 +40,7 @@ RUN a2enconf docker-ci-php
 
 RUN a2enmod rewrite
 
-COPY --chown=www-data:www-data ./CodeIgniter_1.7.3 /usr/src/CodeIgniter_1.7.3
+COPY --chown=www-data:www-data ./ /usr/src/CodeIgniter_1.7.3
 
 RUN ln -s /usr/src/CodeIgniter_1.7.3/system /var/www/codeigniter
 
